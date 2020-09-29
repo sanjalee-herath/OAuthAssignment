@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OAuth Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- load bulma css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- load fontawesome -->
+    <style>
+      body {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-info text-center">Google Account Details</h1>
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center">
+            <div class="card-header">
+              <strong><%= user.displayName %></strong>
+            </div>
+            <div class="card-body">
+              <img
+                src="<%= user.photos[0].value %>"
+                class="card-img-top"
+                alt="..."
+              />
+              <p class="card-text">
+                <strong>Email</strong>: <%= user.emails[0].value %>
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="/" class="btn btn-success">
+                <span class="fa fa-arrow-circle-left"></span> Back
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
