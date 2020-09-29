@@ -1,7 +1,7 @@
 # OAuthAssignment
 
 ## Introduction
-This is a small web application that is using OAut2.0 standard-protocol to handle google single sign-on and display google account's protected resources such as  profile picture and the email.
+This is a small web application that is using OAuth2.0 standard-protocol to handle google single sign-on and display google account's protected resources such as  profile picture and the email.
 
 ## Installation
 1. You will need latest Node.js installed on your server
